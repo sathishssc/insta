@@ -23,13 +23,13 @@ data.get("/data",(req,res) =>{
 })
 
 data.post("/createPost", (req,res) =>{
-    let {name,location,likes,description,postImage} = req.body;
+    let {name,location,likes,description,postImage,url} = req.body;
     let insta = new instaClone({
         name:name,
         location:location,
         likes:likes,
         description:description,
-        postImage:postImage,
+        url:url,
         date:new Date(),
     })
     insta.save().then(d =>{

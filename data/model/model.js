@@ -7,7 +7,7 @@ let data = mogoose.Schema({
     location:{type:String},
     likes:{type:Number},
     description:{type:String},
-    postImage:{type:String},
+    url:{type:String},
     date:{type:Date}
 })
 
